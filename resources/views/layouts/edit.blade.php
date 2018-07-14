@@ -11,7 +11,7 @@
    @endif
 
 <div class="form-group col-md-10">
-    <form action="/notes/update/{{$note->id}}" method="post">
+    <form action="{{route('update', $note->id)}}" method="post">
         {{csrf_field()}}
         {{method_field('PATCH')}}
         {{method_field('PUT')}}
