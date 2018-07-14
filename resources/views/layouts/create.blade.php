@@ -12,7 +12,7 @@
 <h3>Dodaj notkę</h3>
 
 <div class="form-group col-md-10">
-    <form action="/notes/store" method="post">
+    <form action="{{route('store')}}" method="post">
         {{csrf_field()}}
         <label for="title">Tytuł</label>
 <input type="text" name="title" class="form-control" value="">
